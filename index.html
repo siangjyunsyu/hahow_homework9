@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>動態互動天氣盒子</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../hahow_homework9/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main class="daybox">
+      <label>
+        <input id="switch_night" type="checkbox" />
+        <div class="top">
+          <div class="moon"></div>
+          <div class="cloud">
+            <div class="rain"></div>
+            <div class="rain rain2"></div>
+            <div class="rain rain3"></div>
+          </div>
+          <svg class="temsvg">
+            <circle cx="-10" cy="100" r="3"></circle>
+            <text x="-10" y="97"></text>
+            <circle cx="20" cy="90" r="3"></circle>
+            <text x="20" y="90">16°C</text>
+            <circle cx="80" cy="80" r="3"></circle>
+            <text x="80" y="80">17°C</text>
+            <circle cx="140" cy="60" r="3"></circle>
+            <text x="140" y="60">20°C</text>
+            <circle cx="200" cy="60" r="3"></circle>
+            <text x="200" y="60">20°C</text>
+            <circle cx="260" cy="80" r="3"></circle>
+            <text x="260" y="80">16°C</text>
+            <circle cx="320" cy="110" r="3"></circle>
+            <text x="320" y="110">10°C</text>
+            <circle cx="380" cy="100" r="3"></circle>
+            <text x="380" y="100">12°C</text>
+            <polyline points="-10,100 20,90 80,80 140,60 200,60 260,80 320,110 380,100 405,80"></polyline>
+          </svg>
+          <div class="text_area">
+            <div class="temperature">16°C</div>
+            <div class="infos">
+              <div class="address">台北市內湖區</div>
+              <div class="time">星期一 上午10:00</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="dayweather">
+            <h3>MON</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle class="sun" cx="0" cy="0" r="22"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>TUE</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle class="sun" cx="0" cy="0" r="22"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>WED</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle class="sun" cx="0" cy="0" r="22"></circle>
+              <circle class="cloud" cx="0" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-15" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-30" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-25" cy="10" r="15"></circle>
+              <circle class="cloud" cx="-7" cy="15" r="15"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>THU</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle class="sun" cx="0" cy="0" r="22"></circle>
+              <circle class="cloud" cx="0" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-15" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-30" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-25" cy="10" r="15"></circle>
+              <circle class="cloud" cx="-7" cy="15" r="15"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>FRI</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle class="sun" cx="0" cy="0" r="22"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>SAT</h3>
+            <svg viewbox="-63 -30 100 100">
+              <circle class="cloud" cx="0" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-15" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-30" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-25" cy="10" r="15"></circle>
+              <circle class="cloud" cx="-7" cy="15" r="15"></circle>
+            </svg>
+          </div>
+          <div class="dayweather">
+            <h3>SUN</h3>
+            <svg viewbox="-63 -30 100 100">
+              //viewbox:攝影機視線(min-x, min-y, width, height)
+              <line class="rain" x1="-25" y1="15" x="-25" y2="35"></line>
+              <line class="rain" x1="-14" y1="5" x="-14" y2="25"></line>
+              <line class="rain" x1="-5" y1="20" x="-5" y2="45"></line>
+              <circle class="cloud" cx="0" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-15" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-30" cy="30" r="20"></circle>
+              <circle class="cloud" cx="-25" cy="10" r="15"></circle>
+              <circle class="cloud" cx="-7" cy="15" r="15"></circle>
+            </svg>
+          </div>
+        </div>
+      </label>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
